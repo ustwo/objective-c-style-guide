@@ -4,12 +4,8 @@
 
 We use spaces for indentation. Do not use tabs in your code. You should set your editor to emit spaces when you hit the tab key.
 
-*** 
-
 ## Line Length
 Try to avoid long lines. Use soft wrap if possible and wherever readability requires it we split the line.
-
-*** 
 
 ## Type Safety
 Be as type safe as possible. Avoid using id or base classes like NSObject, UIView where possible. Use the lowest common multiple preferring a protocol or an abstract class.
@@ -38,8 +34,6 @@ Exception for actions (use type safety check within method):
             theButton.enabled = NO;
         }
     }
-
-*** 
 
 ## Methods
 ### Naming
@@ -106,8 +100,6 @@ Add new keywords to the end of an existing method when you create a method that 
     - (id)initWithFrame:(NSRect)frameRect;
     - (id)initWithFrame:(NSRect)frameRect mode:(int)aMode cellClass:(Class)factoryId;
 
-*** 
-
 ## Private Methods
 
 Private methods is named in the same manner as public methods. The methods should be sorted after functionality and organized with pragma marks. The public and private methods related to one functionality are placed together in one group. Their order is public methods first, then private. This also makes the Xcode function list more readable.
@@ -131,13 +123,9 @@ Private methods is named in the same manner as public methods. The methods shoul
 
 When creating public libraries there is a good idea to use prefix on your private methods to prevent unintentional overriding. The prefix should be “US2_”.
 
-*** 
-
 ## Overriding Methods
 
 Always call the super method unless you have to prevent the super call.
-
-*** 
 
 ## Method Invocations
 
@@ -161,8 +149,6 @@ Don’t use any of these styles:
               name:arg2  // aligning keywords instead of colons
               error:arg3];
 
-*** 
-
 ## Protocols
 
 There must be a space between the type identifier and the name of the protocol encased in angle brackets.
@@ -176,8 +162,6 @@ There must be a space between the type identifier and the name of the protocol e
     @end
 
 Define callback APIs with @protocol, using @optional if not all the methods are required.
-
-*** 
 
 ## Blocks
 
@@ -245,8 +229,6 @@ Large blocks can be declared out-of-line.
     };
     [operationQueue_ addOperationWithBlock:largeBlock];
 
-*** 
-
 ## Class Names
 
 Class names (along with category and protocol names) should start as uppercase and use mixed case to delimit words.
@@ -255,8 +237,6 @@ Use prefixes when naming classes, protocols, functions, constants, and typedef s
 
 Also, don’t use prefixes for naming the fields of a structure.
 In application-level code, prefixes on class names should generally be avoided. Having every single class with same prefix impairs readability for no benefit. When designing code to be shared across multiple applications, prefixes are acceptable and recommended (e.g. US2SendMessage).
-
-*** 
 
 ## Variable Names
 
@@ -278,15 +258,11 @@ Use:
     UIView *backgroundView;
     UIViewController *loginViewController;
 
-*** 
-
 ## Instance Variables
 
 Do not create public instance variables. Developers should concern themselves with an object’s interface, not with the details of how it stores its data. 
 
 Instance variables is to be declared only in the .m file with an underscore prefix. If you think that access to the data at some point will be needed, use the property to access the variable.
-
-*** 
 
 ## Constants
 
@@ -301,8 +277,6 @@ Don’t use:
 Use:
 
     const CGFloat kUS2Constant
-
-*** 
 
 ## Enumerations
 
@@ -325,8 +299,6 @@ You can create unnamed enumerations for things like bit masks, for example:
         NSWindowMaskResizable       = 1 << 3
     };
 
-*** 
-
 ## Notifications
 
     [Name of associated class] + [Did | Will] + [UniquePartOfName] + Notification
@@ -337,8 +309,6 @@ Examples:
     NSWindowDidMiniaturizeNotification
     NSTextViewDidChangeSelectionNotification
     NSColorPanelColorDidChangeNotification
-
-*** 
 
 ## Asset Names
 
@@ -354,8 +324,6 @@ Use descriptive file namings. Describe what the asset is used for, whether it is
 * `login_button_register_selected@2x.png`
 * `login_icon_company.png`
 * `settings_cell_label_background_company.png`
-
-*** 
 
 ## Sequence Of Methods
 
@@ -419,8 +387,6 @@ Order the methods by their functionality. Also write initializing methods before
         ...
     }
 
-*** 
-
 ## Imports
 
 * Import framework headers first
@@ -449,8 +415,6 @@ Use:
     @implementation US2Class
     @end
 
-*** 
-
 ## Pragma Marks
 
 Section your code by using pragma marks on one line. Pragma marks are dividing the functionalities in a class or file. For example:
@@ -459,9 +423,7 @@ Section your code by using pragma marks on one line. Pragma marks are dividing t
     // Empty line
     #pragma mark - Initialization
 
-Add two empty lines before a pragma mark to create a more obvious segmentation of code. Add one line after a pragma mark.
-
-*** 
+Add two empty lines before a pragma mark to create a more obvious segmentation of code. Add one line after a pragma mark. 
 
 ## Comments
 
