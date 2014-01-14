@@ -211,7 +211,7 @@ There must be a space between the type identifier and the name of the protocol e
 @interface US2Class : NSObject <US2Delegate>
 {
     @private
-      UIView *_privateView;
+    UIView *_privateView;
 }
 
 @end
