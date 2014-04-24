@@ -338,7 +338,23 @@ UIViewController *loginViewController;
 
 Do not create public or private instance variables. Developers should concern themselves with an object’s interface, not with the details of how it stores its data.
 
-Create private properties as an alternative to private instance variables, accessing and setting them through their setters and getters.
+Create private properties as an alternative to private instance variables, accessing and setting them through their setters and getters. 
+
+This avoids progammer errors such as a property with a `copy` attribute being assigned as:
+
+``` objective-c
+_title = string
+```
+
+ instead of:
+
+``` objective-c
+_title = [string copy]
+```
+
+As well as inadvertently avoiding custom setter/getter logic. 
+
+In summary:
 
 Don't use
 
