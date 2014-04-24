@@ -336,9 +336,21 @@ UIViewController *loginViewController;
 
 ## Instance Variables
 
-Do not create public instance variables. Developers should concern themselves with an object’s interface, not with the details of how it stores its data.
+Do not create public or private instance variables. Developers should concern themselves with an object’s interface, not with the details of how it stores its data.
 
-Instance variables is to be declared only in the .m file with an underscore prefix. If you think that access to the data at some point will be needed, use the property to access the variable.
+Create private properties as an alternative to private instance variables, accessing and setting them through their setters and getters.
+
+Don't use
+
+``` objective-c
+_titleLabel.text = @"Hello World"
+```
+
+Use:
+
+``` objective-c
+self.titleLabel.text = @"Hello World"
+```
 
 ## Constants
 
