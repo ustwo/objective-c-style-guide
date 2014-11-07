@@ -31,7 +31,7 @@
 
 ## Spaces vs. Tabs
 
-We use spaces for indentation. Do not use tabs in your code. You should set your editor to emit spaces when you hit the tab key.
+We use spaces for indentation. Do not use tabs in your code. You should set your editor to emit spaces when you hit the tab key. One tab equals 4 spaces.
 
 ## Line Length
 Try to avoid long lines. Use soft wrap if possible and wherever readability requires it we split the line.
