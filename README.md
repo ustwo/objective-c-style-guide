@@ -114,17 +114,6 @@ Don’t use:
 
 Curly brackets on new line but not for blocks. Blocks should use brackets on first line because Xcode is reformatting in an ugly way.
 
-### Extending existing methods
-
-Add new keywords to the end of an existing method when you create a method that is more specific than the inherited one.
-
-``` objective-c
-- (instancetype)initWithFrame:(CGRect)frameRectangle;
-- (instancetype)initWithFrame:(CGRect)frameRectangle
-                         mode:(NSInteger)mode
-                    cellClass:(Class)factoryClass;
-```
-
 ## Private Methods
 
 Private methods is named in the same manner as public methods. The methods should be sorted after functionality and organized with pragma marks. The public and private methods related to one functionality are placed together in one group. Their order is public methods first, then private. This also makes the Xcode function list more readable.
