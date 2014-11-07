@@ -90,9 +90,9 @@ Methods should look like this:
 If you have too many parameters to fit on one line, giving each its own line is preferred. If multiple lines are used, align each using the colon before the parameter. You are free to wrap also methods with two parameters.
 
 ``` objective-c
-- (void)doSomethingWith:(GTMFoo *)theFoo
-                   rect:(NSRect)theRect
-               interval:(float)theInterval
+- (void)doSomethingWith:(US2Foo *)foo
+              rectangle:(CGRect)rectangle
+               interval:(NSTimeInterval)interval
 {
     // ...
 }
