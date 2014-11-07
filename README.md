@@ -9,7 +9,6 @@
     * [Naming](#naming)
     * [Empty Methods](#empty-methods)
     * [Curly Brackets](#curly-brackets)
-    * [Extending existing methods](#extending-existing-methods)
     * [Private Methods](#private-methods)
 * [Overriding Methods](#overriding-methods)
 * [Method Invocations](#method-invocations)
