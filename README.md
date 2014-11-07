@@ -81,7 +81,7 @@ One space should be used between the `–` or `+` and the return type, and no sp
 Methods should look like this:
 
 ``` objective-c
-- (void)doSomethingWithString:(NSString *)theString
+- (void)doSomethingWithSpecialString:(NSString *)specialString
 {
     // ...
 }
