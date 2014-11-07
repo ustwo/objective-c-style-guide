@@ -44,7 +44,8 @@ Don’t use:
 ``` objective-c
 + (id)viewWithData:(id)data
 {
-    return [[[US2Class alloc] initWithData:(US2Data *)data] autorelease];
+    US2Class *classInstance = [[US2Class alloc] initWithData:(US2Data *)data]
+    return classInstance;
 }
 ```
 
@@ -53,20 +54,8 @@ Use:
 ``` objective-c
 + (US2Class *)viewWithData:(US2Data *)data
 {
-    return [[[US2Class alloc] initWithData:data] autorelease];
-}
-```
-
-Exception for actions (use type safety check within method):
-
-``` objective-c
-+ (void)buttonTouched:(id)sender
-{
-    if ([sender isKindOfClass:[UIButton class]])
-    {
-        UIButton *theButton = (UIButton *)sender;
-        theButton.enabled = NO;
-    }
+    US2Class *classInstance = [[US2Class alloc] initWithData:data];
+    return classInstance;
 }
 ```
 
