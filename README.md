@@ -115,27 +115,7 @@ Curly brackets on new line but not for blocks. Blocks should use brackets on fir
 
 ## Private Methods
 
-Private methods is named in the same manner as public methods. The methods should be sorted after functionality and organized with pragma marks. The public and private methods related to one functionality are placed together in one group. Their order is public methods first, then private. This also makes the Xcode function list more readable.
-
-
-#pragma mark - Methods related to function X
-
-``` objective-c
-- (void)myPublicMethod
-{
-    // ...
-}
-```
-
-
-#pragma mark-Private
-
-``` objective-c
-- (void)myPrivateMethodRelatedToMyPublicMethod
-{
-    // ...
-}
-```
+[to be discussed...]
 
 When creating public libraries there is a good idea to use prefix on your private methods to prevent unintentional overriding. The prefix should be “US2_”.
 
