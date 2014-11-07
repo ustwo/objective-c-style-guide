@@ -98,17 +98,6 @@ If you have too many parameters to fit on one line, giving each its own line is 
 }
 ```
 
-When the first keyword is shorter than the others, indent the later lines by at least four spaces. You can do this by making keywords line up vertically, not aligning colons:
-
-``` objective-c
-- (void)short:(US2Foo *)foo
-    longKeyword:(CGRect)rectangle
-    evenLongerKeyword:(NSTimeInterval)interval
-{
-    // ...
-}
-```
-
 ### Empty Methods
 
 Avoid having empty methods in classes unless they are overriding a method and it needs to be empty.
