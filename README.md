@@ -119,8 +119,10 @@ Curly brackets on new line but not for blocks. Blocks should use brackets on fir
 Add new keywords to the end of an existing method when you create a method that is more specific than the inherited one.
 
 ``` objective-c
-- (id)initWithFrame:(NSRect)frameRect;
-- (id)initWithFrame:(NSRect)frameRect mode:(int)aMode cellClass:(Class)factoryId;
+- (instancetype)initWithFrame:(CGRect)frameRectangle;
+- (instancetype)initWithFrame:(CGRect)frameRectangle
+                         mode:(NSInteger)mode
+                    cellClass:(Class)factoryClass;
 ```
 
 ## Private Methods
